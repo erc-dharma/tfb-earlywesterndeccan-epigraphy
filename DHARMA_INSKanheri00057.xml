@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Kanheri Epitaph Inscription 7</title>
+              
+                <respStmt>
+                    <resp key="contributor">EpiDoc Encoding</resp>
+                    
+                    <persName ref="part:kema">
+                        <forename>Kelsey</forename>
+                        <surname>Martini</surname>
+                    </persName>
+                    
+                </respStmt>
+                <respStmt>
+                    <resp key="creator">intellectual authorship of edition</resp>
+                  
+                    <persName ref="part:kema">
+                        <forename>Kelsey</forename>
+                        <surname>Martini</surname>
+                    </persName>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanheri00057.xml</idno>
+        
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc><!-- only the handDesc can be filled in at this stage -->
+                <msDesc><!-- //// NB: the msIdentifier had to be added for validation purposes ///. It will be edited later with the metadata spreadsheet -->
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/><!-- don't modify this -->
+                    </msIdentifier>
+                    
+                    <msContents>
+                        <summary/> 
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                            
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:kema" when="2025-07-16">Initial Encoding of the File</change>
+            <change who="part:axja" when="2020-10-12">Version 3.2 : moving the xml:lang to the root</change>
+            <change who="part:axja" when="2020-07-02">Version 3.1: adding the encodingDesc and linking the template with the DHARMA Schema</change>
+            <change who="part:axja" when="2020-03-18">Version 2: addition of handDesc and summary</change>
+            <change who="part:axja" when="2019-12-18" status="draft">Creation of the template</change>
+            
+        </revisionDesc> 
+    </teiHeader>
+    
+    
+    
+    
+    
+    <text xml:space="preserve">
+      <body>
+          
+         <div type="edition" xml:lang="pra-Latn">
+           <p>  
+           <lb n="1"/><supplied reason="lost">the</supplied><unclear>r</unclear><supplied reason="lost">āṇaṁ <space/> Ayya</supplied><unclear>[bo]</unclear>dh<unclear>[i]</unclear>
+           <lb break="no" n="2"/><supplied reason="lost">p</supplied><unclear>ā</unclear>lāṇaṁ Ara<space type="defect"/>haṁ<unclear>tā</unclear>ṇaṁ
+           <lb break="no" n="3"/>thūbhaṁ
+          </p> 
+         </div>
+          
+          
+          
+          
+         <div type="apparatus">
+           
+               <listApp>
+                  <app loc="1">
+                     <lem><supplied reason="lost">the</supplied><unclear>r</unclear><supplied reason="lost">āṇaṁ <space/> Ayya</supplied>[bo]dh[i]-
+           <lb break="no" n="2"/><supplied reason="lost">p</supplied><unclear>ā</unclear>lāṇaṁ</lem>
+                     <rdg source="bib:Gokhale1991_01"><gap reason="lost" quantity="5" unit="character"/>dhi <gap reason="lost" quantity="1" unit="character"/> lānaṃ</rdg>
+                      <note>Gokhale argues that this was once <foreign>dhitimūla</foreign> and provides a (seemingly irrelevant) reference to <foreign>Aṭṭḥasālini</foreign> 3.285. This seems incorrect.</note>
+                  </app>
+                  <app loc="2">
+                      <lem>Ara<space type="defect"/>haṁ<unclear>tā</unclear>ṇaṁ</lem>
+                   <rdg source="bib:Gokhale1991_01">Arahantāṇaṁ</rdg>      
+                  </app>
+                  <app loc="3">
+                      <lem>thūbhaṁ</lem>
+                   <rdg source="bib:Gokhale1991_01"><gap reason="lost" quantity="4" unit="character"/> thubhaṃ</rdg>
+                      <note>There are no missing akṣaras, rather the word <foreign>thūbhaṃ</foreign> is directly below the end of the second line.</note>
+                  </app> 
+               </listApp>
+         </div>
+          
+          
+          
+          
+          
+         <div type="translation">
+ 	
+         </div>
+          
+          
+          
+          
+         <div type="commentary">
+            
+         </div>
+          
+          
+          
+          
+        <div type="bibliography">
+	
+           <p/>   
+            
+            <listBibl type="primary">
+    		    <bibl n="G">
+    		      <ptr target="bib:Gokhale1991_01"/>
+    		      <citedRange unit="page">114</citedRange>
+    		      <citedRange unit="item">E7</citedRange>  
+    		    </bibl>  	    
+    		</listBibl>
+                
+            <listBibl type="secondary">
+                  <bibl>    
+                  </bibl>
+                   
+                   
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

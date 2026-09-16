@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Kanheri Cave 65 Verandah Inscription</title>
+              
+                <respStmt>
+                    <resp key="contributor">EpiDoc Encoding</resp>
+                    
+                    <persName ref="part:kema">
+                        <forename>Kelsey</forename>
+                        <surname>Martini</surname>
+                    </persName>
+			<persName ref="part:vito"><!-- Update the id -->
+                        <forename>Vincent</forename><!-- Fill in the name of the responsible scholar — it possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Tournier</surname>
+                    </persName>
+                    
+                </respStmt>
+                <respStmt>
+                    <resp key="creator">intellectual authorship of edition</resp>
+                  
+                    <persName ref="part:kema">
+                        <forename>Kelsey</forename>
+                        <surname>Martini</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanheri00038.xml</idno>
+        
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc><!-- only the handDesc can be filled in at this stage -->
+                <msDesc><!-- //// NB: the msIdentifier had to be added for validation purposes ///. It will be edited later with the metadata spreadsheet -->
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/><!-- don't modify this -->
+                    </msIdentifier>
+                    
+                    <msContents>
+                        <summary/> 
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                            
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+	    <change who="part:kema" when="2025-06-17">Fix typos, change translation.</change>
+            <change who="part:kema" when="2025-06-02">Initial Encoding of the File</change>
+            <change who="part:axja" when="2020-10-12">Version 3.2 : moving the xml:lang to the root</change>
+            <change who="part:axja" when="2020-07-02">Version 3.1: adding the encodingDesc and linking the template with the DHARMA Schema</change>
+            <change who="part:axja" when="2020-03-18">Version 2: addition of handDesc and summary</change>
+            <change who="part:axja" when="2019-12-18" status="draft">Creation of the template</change>
+            
+        </revisionDesc> 
+    </teiHeader>
+    
+    
+    
+    
+    
+    <text xml:space="preserve">
+      <body>
+          
+         <div type="edition" xml:lang="pra-Latn">
+           <p>  
+           <lb n="1"/>sidha Upāsakasa <space/> dh<unclear>e</unclear>ṇukākaḍayasa <space/> kulapiyasa 
+           <lb n="2"/><unclear>dha</unclear>maṇakasa dhatuya <space/> pavaItikāya <space/> s<unclear>āpāya</unclear> th<unclear>e</unclear>
+           <lb break="no" n="3"/>r<unclear>ā</unclear>ṇa bhadatabodhikāṇa <space/> poṇakāna <space/> Ātevasiṇi<supplied reason="lost">ya</supplied>
+           <lb n="4"/>leṇa deyadhama <space/> pāṇiyapoḍhi ca <space/> sahā bhagiṇiya
+           <lb n="5"/>ratinikāya <space/> saha ca saveṇa <space/> nātisabadhi<unclear>va</unclear><supplied reason="lost">ge</supplied>
+           <lb break="no" n="6"/>ṇa c<unclear>ā</unclear>t<unclear>u</unclear>dise bhikhusaghe <space/> Aṭha<unclear>su</unclear> puris<unclear>esu</unclear> <gap reason="illegible" quantity="1" unit="character"/>
+           <lb break="no" n="7"/>esu patiṭhāpita mātapitaro Udisa <space/> sāval<unclear>o</unclear>gasa ca
+           <lb n="8"/> hitasughatha bhikhusaghasa Akhayanivi ca diṇā <unclear>E</unclear>t<unclear>o</unclear> ca <unclear>bhi</unclear>kh<unclear>u</unclear>
+           <lb break="no" n="9"/>saṁghaṇa civarika dātava s<unclear>o</unclear>lasaka Utukāle ca <unclear>pa</unclear><supplied reason="lost">ṭike</supplied>
+          </p> 
+         </div>
+          
+          
+          
+          
+         <div type="apparatus">
+           
+               <listApp>
+                  <app loc="1">
+                     <lem>dh<unclear>e</unclear>ṇukākaḍayasa</lem>
+                     <rdg source="bib:Burgess+Buhler1883_01">dheṇukākaṭiyasa</rdg>
+                     <rdg source="bib:Gokhale1991_01">dheṇukākaṭiyasa</rdg>
+                  </app>
+               
+                  <app loc="3">
+                     <lem>bhadatabodhikāṇa <space/> poṇakāṇa</lem>
+                     <rdg source="bib:Burgess+Buhler1883_01">bhadatabodhikāṇa</rdg>
+                     <rdg source="bib:Gokhale1991_01">bhadatabodhikāṇa poṇakāṇo</rdg>
+                      <note>B+B completely glosses over the clearly visible <foreign>poṇakāṇa</foreign></note>
+                  </app>
+          
+                
+
+           
+                  <app loc="6">
+                     <lem>Aṭha<unclear>su</unclear> puris<unclear>esu</unclear></lem>
+                     <rdg source="bib:Burgess+Buhler1883_01">Aṭhasu puris<unclear>esu</unclear></rdg>
+                     <rdg source="bib:Gokhale1991_01">Atha Apariselesu</rdg>
+                     <note>Comparison with the following line makes it clear that at least one and probably two more akṣaras were originally engraved after <foreign>puri­[s](esu)</foreign>, thus making Gokhale’s reading all the more unlikely. The frequent occurrence of the term <foreign>sapurisa</foreign> (Skt. <foreign>satpuruṣa</foreign> in early epigraphic records, and the possibility that sa has been dropped after <foreign>su</foreign> in the engraving process through pseudo-haplography, make it tempting to restore <foreign>⟨sa⟩puri[s](esu)</foreign>.</note>
+                  </app>
+               
+                  <app loc="7">
+                     <lem>sāva l<unclear>o</unclear>gasa ca</lem>
+                     <rdg source="bib:Burgess+Buhler1883_01">sava<unclear>satāna</unclear></rdg>
+                     <rdg source="bib:Gokhale1991_01">sava<unclear>satāna</unclear></rdg>
+                  </app>
+               
+                  <app loc="9">
+                     <lem>saṃghaṇa</lem>
+                     <rdg source="bib:Burgess+Buhler1883_01">saṃghena</rdg>
+                     <rdg source="bib:Gokhale1991_01">saṃghena</rdg>
+                     <note>There is no distinct mātra on either the eye-copy or photograph, or RTI.</note>
+                  </app>
+               
+                  <app loc="9">
+                     <lem>ca <unclear>pa</unclear><supplied reason="lost">ṭike</supplied></lem>
+                     <rdg source="bib:Burgess+Buhler1883_01">ca <gap reason="lost" quantity="3" unit="character"/></rdg>
+                     <rdg source="bib:Gokhale1991_01">ca <gap reason="lost" quantity="3" unit="character"/></rdg>
+                  </app>
+               </listApp>
+         </div>
+          
+          
+          
+          
+          
+         <div type="translation">
+ 	<p n="1-8">Success! A cave and drinking cistern: the meritorious gift of the renunciant Sāpā — daughter of Dhammaṇṇaka of Dheṇukākaḍa who is dear to his family — pupil of the reverend elder Bodhika [and?] Poṇaka (Skt. Pūrṇaka?), together with her sister Ratiṇṇikā and together with the entire group of her relatives and connections. Established for the universal order of monks, for eight … individuals (?), on behalf of her mother and father, and for the purpose of the happiness and welfare of the whole world.</p>
+    <p n="8-9">And an <foreign>akṣayanīvī</foreign> is given to the order of monks. And from this a cloth money of sixteen is to be given to the order of monks and a <foreign>paṭika</foreign> in the (hot) season.</p>
+         </div>
+          
+          
+          
+          
+         <div type="commentary">
+           <p>B+B and G do not indicate the spacing between words. The upper left corner of the inscription is now peeled off, resulting in a loss of akṣaras in the first two lines. However, it was intact when West made his eye-copy and the reading is secure.</p> 
+         </div>
+          
+          
+          
+          
+        <div type="bibliography">
+	
+           <p/>   
+            
+            <listBibl type="primary">
+    			<bibl n="B+B">
+    		      <ptr target="bib:Burgess+Buhler1883_01"/>
+    			  <citedRange unit="page">85</citedRange>
+    			  <citedRange unit="item">28</citedRange>  
+    		    </bibl>
+    		    <bibl n="G">
+    		      <ptr target="bib:Gokhale1991_01"/>
+    		      <citedRange unit="page">91</citedRange>
+    			  <citedRange unit="item">38</citedRange>
+    		    </bibl>    	    
+    		</listBibl>
+                
+            <listBibl type="secondary">
+                  <bibl/>
+                  <bibl>
+                      <ptr target="bib:Senart1905-1906_01"/>
+                      <citedRange unit="page">83</citedRange>
+                  </bibl>
+                <bibl>
+                      <ptr target="bib:Stein1933_01"/>
+                      <citedRange unit="page">226 fn. 30</citedRange>
+                  </bibl>
+                <bibl>
+                      <ptr target="bib:Dikshit1942_01"/>
+                      <citedRange unit="page">60-63</citedRange>
+                  </bibl>
+                   <bibl>   
+                     <ptr target="bib:Naik1948_01"/>
+                      <citedRange unit="page">4, 19, 21, 23, 26</citedRange>
+                    </bibl>
+                <bibl>
+                      <ptr target="bib:Kosambi1955_01"/>
+                      <citedRange unit="page">57</citedRange>
+                  </bibl>
+                <bibl>
+                      <ptr target="bib:Lamotte1958_01"/>
+                      <citedRange unit="page">568</citedRange>
+                  </bibl>
+                <bibl>
+                      <ptr target="bib:Njammasch1971_01"/>
+                      <citedRange unit="page">213-214</citedRange>
+                  </bibl>
+                <bibl>
+                      <ptr target="bib:Njammasch1972_01"/>
+                      <citedRange unit="page">262, 305</citedRange>
+                  </bibl>
+                  <bibl>
+                     <ptr target="bib:Hettiarachchy1973_01"/>
+                     <citedRange unit="page">135, 256</citedRange>
+                  </bibl>
+                <bibl>
+                      <ptr target="bib:Ray1986_01"/>
+                      <citedRange unit="page">103-104</citedRange>
+                  </bibl>
+                <bibl>
+                      <ptr target="bib:HanumanthaRao1987_01"/>
+                      <citedRange unit="page">51 fn. 19</citedRange>
+                  </bibl>
+                  <bibl>
+                      <ptr target="bib:Shimada2018_01"/>
+                      <citedRange unit="page">491</citedRange>                  
+                  </bibl>
+                  <bibl>
+                      <ptr target="bib:Strauch2021_01"/>
+                      <citedRange unit="page">206</citedRange>
+                  </bibl>
+                  <bibl>
+                      <ptr target="bib:Pandit2023_01"/>
+                      <citedRange unit="page">99</citedRange>
+                  </bibl>
+                   
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

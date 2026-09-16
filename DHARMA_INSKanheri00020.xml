@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Kanheri Stone Path Between Cave 16 and 17 Inscription</title>
+              
+                <respStmt>
+                    <resp key="contributor">EpiDoc Encoding</resp>
+                    
+                    <persName ref="part:kema">
+                        <forename>Kelsey</forename>
+                        <surname>Martini</surname>
+                    </persName>
+			<persName ref="part:vito"><!-- Update the id -->
+                        <forename>Vincent</forename><!-- Fill in the name of the responsible scholar — it possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Tournier</surname>
+                    </persName>
+                    
+                </respStmt>
+                <respStmt>
+                    <resp key="creator">intellectual authorship of edition</resp>
+                  
+                    <persName ref="part:kema">
+                        <forename>Kelsey</forename>
+                        <surname>Martini</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanheri00020.xml</idno>
+        
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc><!-- only the handDesc can be filled in at this stage -->
+                <msDesc><!-- //// NB: the msIdentifier had to be added for validation purposes ///. It will be edited later with the metadata spreadsheet -->
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/><!-- don't modify this -->
+                    </msIdentifier>
+                    
+                    <msContents>
+                        <summary/> 
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                            
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:kema" when="2025-07-08">Updated commentary and bibliography, link to KI00018</change>
+            <change who="part:kema" when="2025-06-02">Initial Encoding of the File</change>
+            <change who="part:axja" when="2020-10-12">Version 3.2 : moving the xml:lang to the root</change>
+            <change who="part:axja" when="2020-07-02">Version 3.1: adding the encodingDesc and linking the template with the DHARMA Schema</change>
+            <change who="part:axja" when="2020-03-18">Version 2: addition of handDesc and summary</change>
+            <change who="part:axja" when="2019-12-18" status="draft">Creation of the template</change>
+            
+        </revisionDesc> 
+    </teiHeader>
+    
+    
+    
+    
+    
+    <text xml:space="preserve">
+      <body>
+          
+         <div type="edition" xml:lang="pra-Latn">
+           <p>  
+           <lb n="1"/><g ref="sym:san-svastika-left" type="symbol">*</g>cemulakasa heraṇikasa rohiṇi 
+           <lb break="no" n="2"/>mitasa putasa dhamaṇakasa patho
+           <lb n="3"/>deyadhaṁma
+        
+          </p> 
+         </div>
+          
+          
+          
+          
+         <div type="apparatus">
+           
+               <listApp>
+                  <app loc="3">
+                      <lem>deyadhaṃma</lem>
+                      <rdg source="bib:Gokhale1991_01">deyadhama</rdg>
+                  </app>
+               </listApp>
+         </div>
+          
+          
+          
+          
+          
+         <div type="translation">
+ 	<p>A path, the meritorious gift of Dhammaṇṇaka, the son of Rohiṇimitta, a minter of Cemulla</p>
+         </div>
+          
+          
+          
+          
+         <div type="commentary">
+         <p>Another son of Rohiṇimitta acts as donor in <ref target="DHARMA_INSKanheri00018.xml">KI00018</ref>.
+         </p>   
+         </div>
+          
+          
+          
+          
+        <div type="bibliography">
+	
+           <p/>   
+            
+            <listBibl type="primary">
+    		    <bibl n="G">
+    		      <ptr target="bib:Gokhale1991_01"/>
+    		        <citedRange unit="page">66</citedRange>
+    		        <citedRange unit="item">20</citedRange>
+    		    </bibl>  	    
+    		</listBibl>
+                
+            <listBibl type="secondary">
+               <bibl>
+                            <ptr target="bib:Naik1948_01"/>
+                            <citedRange unit="page">52, 97 no. 193</citedRange>
+                    </bibl>
+                  <bibl>
+                            <ptr target="bib:Hettiarachchy1973_01"/>
+                            <citedRange unit="page">193</citedRange>
+                  </bibl>
+                  <bibl>
+                      <ptr target="bib:Neelis2011_01"/>
+                      <citedRange unit="page">25 n. 75</citedRange>                  
+                  </bibl>
+                  <bibl>
+                      <ptr target="bib:Ghosh2023_01"/>
+                      <citedRange unit="page">175</citedRange>
+                  </bibl>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

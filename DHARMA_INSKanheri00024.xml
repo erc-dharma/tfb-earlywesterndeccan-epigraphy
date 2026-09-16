@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Kanheri Cave 16 Bench Inscription</title>
+              
+                <respStmt>
+                    <resp key="contributor">EpiDoc Encoding</resp>
+                    
+                    <persName ref="part:kema">
+                        <forename>Kelsey</forename>
+                        <surname>Martini</surname>
+                    </persName>
+                    
+                </respStmt>
+                <respStmt>
+                    <resp key="creator">intellectual authorship of edition</resp>
+                  
+                    <persName ref="part:kema">
+                        <forename>Kelsey</forename>
+                        <surname>Martini</surname>
+                    </persName>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanheri00024.xml</idno>
+        
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc><!-- only the handDesc can be filled in at this stage -->
+                <msDesc><!-- //// NB: the msIdentifier had to be added for validation purposes ///. It will be edited later with the metadata spreadsheet -->
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/><!-- don't modify this -->
+                    </msIdentifier>
+                    
+                    <msContents>
+                        <summary/> 
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                            
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:kema" when="2025-07-14">Initial Encoding of the File</change>
+            <change who="part:axja" when="2020-10-12">Version 3.2 : moving the xml:lang to the root</change>
+            <change who="part:axja" when="2020-07-02">Version 3.1: adding the encodingDesc and linking the template with the DHARMA Schema</change>
+            <change who="part:axja" when="2020-03-18">Version 2: addition of handDesc and summary</change>
+            <change who="part:axja" when="2019-12-18" status="draft">Creation of the template</change>
+            
+        </revisionDesc> 
+    </teiHeader>
+    
+    
+    
+    
+    
+    <text xml:space="preserve">
+      <body>
+          
+         <div type="edition" xml:lang="pra-Latn">
+           <p>  
+           <lb n="1"/>sidha Upāsakasa <unclear>vha</unclear>mitaputasa negamasa muḍapālasa
+           <lb n="2"/>sopārakasa sahā kuḍubiṇ<unclear>i</unclear>hi sahā bālakehi deyadhama chetaṁ diṇa Akhaya<subst><del>vi</del><add place="overstrike">ni</add></subst><unclear>vi</unclear>    
+          </p> 
+         </div>
+          
+          
+          
+          
+         <div type="apparatus">
+           
+               <listApp>
+                  <app loc="1">
+                     <lem><unclear>[vha]</unclear>mitaputasa</lem>
+                     <rdg source="bib:Gokhale1991_01">viṇhumitasa</rdg>
+                      <note/>
+                  </app>
+                  <app loc="1"> 
+                     <lem>muḍapālasa</lem>
+                     <rdg source="bib:Gokhale1991_01">muṇḍapālasa</rdg> 
+                     <note/> 
+                  </app>
+                   <app loc="2">
+                     <lem>sahā</lem>
+                     <rdg source="bib:Gokhale1991_01">saha</rdg>
+                      <note>The <foreign>ā</foreign>-mātra is clear on both this and the following <foreign>sahā</foreign>.</note>
+                  </app>
+                  <app loc="2"> 
+                     <lem>kuḍubiṇ<unclear>i</unclear>hi</lem>
+                     <rdg source="bib:Gokhale1991_01">kuṭubinihi</rdg> 
+                     <note/> 
+                  </app>
+                   <app loc="2">
+                     <lem>Akhaya<subst><del>vi</del><add place="overstrike">ni</add></subst><unclear>vi</unclear></lem>
+                     <rdg source="bib:Gokhale1991_01">akhayanivi</rdg>
+                      <note>It would appear that the engraver originally forgot to carve the <foreign>ni</foreign> and instead carved a <foreign>vi</foreign> which he then corrected to a <foreign>ni</foreign>.</note>
+                  </app>
+               </listApp>
+         </div>
+          
+          
+          
+          
+          
+         <div type="translation">
+ 	<p>Success! A field is given as <foreign>akṣayanīvī</foreign>: The meritorious gift of the market councillor Muḍapāla of Sopāra, son of the lay-follower [Vha]mita. Together with the <foreign>kuḍubinis</foreign> and the progeny.</p>
+         </div>
+          
+          
+          
+          
+         <div type="commentary">
+            
+         </div>
+          
+          
+          
+          
+        <div type="bibliography">
+	
+           <p/>   
+            
+            <listBibl type="primary">
+    		    <bibl n="G">
+    		      <ptr target="bib:Gokhale1991_01"/>
+    		    </bibl>  	    
+    		</listBibl>
+                
+            <listBibl type="secondary">
+                    <bibl>   
+                     <ptr target="bib:Naik1948_01"/>
+                      <citedRange unit="page">19-20</citedRange>
+                    </bibl>
+                    <bibl>
+                    <ptr target="bib:Shimada2018_01"/>
+                      <citedRange unit="page">491 fn. 24</citedRange>  
+                    </bibl>
+                    <bibl>
+                    <ptr target="bib:Visvanathan2018_01"/>
+                      <citedRange unit="page">529</citedRange>  
+                    </bibl>
+                     <bibl>
+                    <ptr target="bib:Strauch2021_01"/>
+                      <citedRange unit="page">206</citedRange>  
+                    </bibl>
+                   
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>
